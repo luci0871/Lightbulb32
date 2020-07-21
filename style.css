@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Bad Script', 'Roboto Condensed', sans-serif;
     background: #000;
+
 }
 
 
@@ -58,7 +59,7 @@ h1 span:nth-child(8) {
 }
 
 h1 span:nth-child(9) {
-    animation-delay: 2s;
+    animation-delay: 1.85s;
 }
 
 @keyframes animate {
@@ -67,7 +68,7 @@ h1 span:nth-child(9) {
     100% {
         color: #fff;
         filter: blur(2px);
-        text-shadow: 0 0 10px #00b3ff,
+        text-shadow: 0 0 10px #e4c641,
             0 0 20px #e4c641,
             0 0 40px #e4c641,
             0 0 80px #e4c641,
