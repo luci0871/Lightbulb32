@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Bad Script', 'Roboto Condensed', sans-serif;
+    font-family: 'Karla', sans-serif;
     background: #000;
 
 }
@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     letter-spacing: 4px;
     line-height: 23px;
+    font-family: 'Indie Flower', cursive;
 }
 
 h1 span {
@@ -225,12 +226,12 @@ h1 span:nth-child(9) {
     text-align: center;
 }
 
-#progress-content-section .section-content h2 {
+/** #progress-content-section .section-content h2 {
     font-size: 17px;
     text-transform: uppercase;
     color: #333;
     letter-spacing: 1px;
-}
+}**/
 
 #progress-content-section .section-content p {
     font-size: 16px;
