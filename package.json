@@ -1,0 +1,25 @@
+{
+  "name": "Lightbulb32",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jscript.js",
+  "scripts": {
+    "start": "parcel *.html --open",
+    "build": "parcel build *.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luci0871/Lightbulb32.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luci0871/Lightbulb32/issues"
+  },
+  "homepage": "https://github.com/luci0871/Lightbulb32#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.10"
+  }
+}
