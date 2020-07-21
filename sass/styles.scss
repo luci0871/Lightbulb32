@@ -1,0 +1,9 @@
+@use "partials/vars";
+
+
+#progress-content-section .section-content h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: vars.$pandora;
+    letter-spacing: 1px;
+}
