@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background: #000;
+}
+
+
+h1 {
+    display: block;
+    margin-top: 125px;
+    font-size: 5em;
+    background-position: center;
+    color: #111;
+    padding: 0;
+    margin-top: 125px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 23px;
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 span {
+    /* display: table-cell; */
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 2s;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #e4c641,
+            0 0 40px #e4c641,
+            0 0 80px #e4c641,
+            0 0 120px #e4c641,
+            0 0 200px #e4c641,
+            0 0 300px #e4c641,
+            0 0 400px #e4c641,
+            0 0 500px #e4c641;
+
+    }
+
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+
+/* --- Start progress bar --- */
+
+.process-wrapper {
+    margin: auto;
+    max-width: 1080px;
+}
+
+#progress-bar-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 65px;
+}
+
+#progress-bar-container ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    margin-top: -40px
+}
+
+#progress-bar-container li:before {
+    content: " ";
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px #aaa;
+    transition: all ease 0.3s;
+
+}
+
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover:before {
+    /* border: solid 2px #fff;
+
+    background: linear-gradient(to right, #6e2ac7 0%, #fff 100%); */
+
+    color: #fcc050;
+    background: #f1a248;
+    box-shadow: 0 0 10px #f06a42, 0 0 40px #e2f348, 0 0 60px #f1bd4d;
+    transition-delay: 0.5s;
+}
+
+#progress-bar-container li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all ease 0.2s;
+    vertical-align: bottom;
+    height: 60px;
+    position: relative;
+}
+
+#progress-bar-container li .step-inner {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+#progress-bar-container li.active,
+#progress-bar-container li:hover {
+    color: #444;
+}
+
+#progress-bar-container li:after {
+    content: " ";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #777;
+    margin: auto;
+    border: solid 7px #fff;
+    border-radius: 50%;
+    margin-top: 40px;
+    box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.2s;
+
+}
+
+#progress-bar-container li:hover:after {
+    background: #555;
+}
+
+#progress-bar-container li.active:after {
+    background: #207893;
+}
+
+#progress-bar-container #line {
+    width: 80%;
+    margin: auto;
+    background: #eee;
+    height: 6px;
+    position: absolute;
+    left: 10%;
+    top: 57px;
+    z-index: 1;
+    border-radius: 50px;
+    transition: all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+    content: " ";
+    width: 3%;
+    height: 100%;
+    background: #207893;
+    background: linear-gradient(to right, #207893 0%, #2ea3b7 100%);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    transition: all ease 0.9s;
+}
+
+#progress-content-section {
+    width: 90%;
+    margin: auto;
+    background: #f3f3f3;
+    border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+/** #progress-content-section .section-content h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+}**/
+
+#progress-content-section .section-content p {
+    font-size: 16px;
+    color: #333;
+    /*line-height: 1.8em;*/
+}
+
+#progress-content-section .section-content {
+    display: none;
+    animation: FadeInUp 700ms ease 1;
+    animation-fill-mode: forwards;
+    transform: translateY(15px);
+    opacity: 0;
+}
+
+#progress-content-section .section-content.active {
+    display: block;
+}
+
+@keyframes FadeInUp {
+    0% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: auto auto;
+    gap: 1px 1px;
+    grid-template-areas: ". ."". .";
+}
+
+.gridtext {
+    text-align: left;
+}
+
+/* the electric arc lamp animation */
+
+.bulb1 {
+    fill: rgba(255, 153, 0, 0.877);
+    transform: scale(0.60);
+}
+
+.bulb1:hover {
+    margin-top: 1px;
+    transform: scale(0.85);
+    transition-duration: 1.5s;
+    fill: rgb(255, 217, 0);
+}
+
+/* early light bulbs animation */
+
+.lightpic {
+    fill: rgba(255, 153, 0, 0.877);
+}
+
+.lightpic:hover {
+    fill: rgb(255, 217, 0);
+    transform: rotate(180deg);
+    transition-duration: 1.5s;
+}
+
+/* the incandescent light bulb animation */
+
+.ideahead {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: headmove;
+}
+
+@keyframes headmove {
+    0% {
+        fill: rgba(255, 153, 0, 0.877);
+        width: 50px;
+    }
+
+    100% {
+        fill: rgb(255, 217, 0);
+        width: 400px;
+    }
+}
+
+/* tungsten filaments animation */
+
+.bulb2 {
+    transform: scale(0.75);
+}
+
+.bulb2 .innerlight {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bulb2move;
+    /*transform: scale(0.75);*/
+    transition-duration: 1.5s;
+}
+
+
+@keyframes bulb2move {
+    0% {
+        fill: rgb(255, 217, 0);
+    }
+
+    25% {
+        fill: rgba(255, 153, 0, 0.877);
+    }
+
+    50% {
+        fill: orange;
+    }
+
+    75% {
+        fill: orangered;
+    }
+
+    100% {
+        fill: rgb(255, 217, 0);
+    }
+}
+
+
+
+/* future of light bulbs animation */
+
+.future-light .lightning {
+    fill: rgba(255, 153, 0, 0.877);
+    animation-name: lightningcolors;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lightningcolors {
+    0% {
+        fill: rgb(255, 217, 0);
+    }
+
+    25% {
+        fill: rgba(255, 153, 0, 0.877);
+    }
+
+    50% {
+        fill: orange;
+    }
+
+    75% {
+        fill: orangered;
+    }
+
+    100% {
+        fill: rgb(255, 217, 0);
+    }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
