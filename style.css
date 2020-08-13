@@ -377,7 +377,7 @@ h1 span:nth-child(9) {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .gridtext {
     width: 400px;
     margin: 0 auto;
